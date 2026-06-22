@@ -1,0 +1,44 @@
+Expenses,المصروفات
+Expense Entry,قيد مصروف
+Expense Entry Item,بند المصروف
+Expense Details,تفاصيل المصروف
+Reference & Notes,مرجع وملاحظات
+Series,سلسلة
+Company,الشركة
+Mode of Payment,طريقة الدفع
+Payment Type,نوع الدفع
+Payment Account,حساب الدفع
+Currency,العملة
+Posting Date,تاريخ القيد
+Cost Center,مركز التكلفة
+Project,المشروع
+Expenses,المصروفات
+Total Amount,إجمالي المبلغ
+Reference No,رقم المرجع
+Reference Date,تاريخ المرجع
+Remarks,ملاحظات
+Amended From,معدّل من
+Expense Account,حساب المصروف
+Description,الوصف
+Amount,المبلغ
+Please add at least one expense row.,يرجى إضافة بند مصروف واحد على الأقل.
+Row #{0}: Amount must be greater than zero.,الصف #{0}: المبلغ يجب أن يكون أكبر من صفر.
+Total Amount must be greater than zero.,إجمالي المبلغ يجب أن يكون أكبر من صفر.
+Please select a Company first.,يرجى اختيار الشركة أولاً.
+Could not find a default account for Mode of Payment {0} in company {1}. Please set it under Accounting Settings > Mode of Payment.,لم يتم العثور على حساب افتراضي لطريقة الدفع {0} في الشركة {1}. يرجى ضبطه من إعدادات المحاسبة > طريقة الدفع.
+Payment Account currency ({0}) must match the company currency ({1}).,عملة حساب الدفع ({0}) يجب أن تطابق عملة الشركة ({1}).
+Expense Entry {0},قيد مصروف {0}
+Ledger,دفتر الأستاذ
+View,عرض
+Defaults to the account name if left blank.,يُستخدم اسم الحساب افتراضياً إن تُرك فارغاً.
+Cheque / transfer / reference number. Required for non-cash payments.,رقم الشيك / التحويل / المرجع. مطلوب لغير النقدي.
+Default Cost Center applied to expense rows that don't have one.,مركز التكلفة الافتراضي للبنود بدون مركز تكلفة.
+Cash, Bank or any payment method. The payment account is fetched automatically.,نقدي أو بنك أو أي طريقة دفع. يُجلب حساب الدفع تلقائياً.
+Bank/Cash account credited for the total. Auto-filled from the Mode of Payment.,حساب البنك/النقد المُ credited للإجمالي. يُملأ تلقائياً من طريقة الدفع.
+Expense Register,سجل المصروفات
+From Date,من تاريخ
+To Date,إلى تاريخ
+Total,الإجمالي
+From Date and To Date are required.,من تاريخ وإلى تاريخ مطلوبان.
+From Date cannot be after To Date.,من تاريخ لا يمكن أن يكون بعد إلى تاريخ.
+Expense Entry Standard,سند مصروف قياسي

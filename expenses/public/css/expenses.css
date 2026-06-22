@@ -1,0 +1,17 @@
+/* Expenses — clean entry form */
+[data-page-route="Form/Expense Entry"] .form-page {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+[data-page-route="Form/Expense Entry"] .grid-row .col[data-fieldname="expense_account"],
+[data-page-route="Form/Expense Entry"] .grid-row .col[data-fieldname="amount"],
+[data-page-route="Form/Expense Entry"] .grid-row .col[data-fieldname="description"] {
+	min-width: 120px;
+}
+
+[data-page-route="Form/Expense Entry"] .frappe-control[data-fieldname="total_amount"] .control-value {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--primary);
+}

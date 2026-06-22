@@ -7,7 +7,13 @@ app_description = "For expense entry in ERPNext"
 app_email = "info@efeone.com"
 app_license = "MIT"
 
-# Includes in <head>
+after_install = "expenses.install.after_install"
+after_migrate = "expenses.install.after_migrate"
+
+app_include_css = [
+	"/assets/expenses/css/expenses.css",
+	"/assets/expenses/css/expense_report.css",
+]
 # ------------------
 
 # include js, css files in header of desk.html

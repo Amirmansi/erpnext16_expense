@@ -1,0 +1,37 @@
+.expense-register-report .dt-scrollable,
+.expense-register-report .datatable {
+	width: 100%;
+}
+
+.expense-register-report .dt-scrollable .dt-cell__content,
+.expense-register-report .datatable .dt-cell__content {
+	white-space: normal !important;
+	word-break: break-word;
+	line-height: 1.45;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.expense-register-report .dt-scrollable .dt-cell__content--header-0,
+.expense-register-report .datatable .dt-cell__content--header-0 {
+	font-weight: 600;
+}
+
+@media print {
+	body.expense-register-report,
+	.expense-register-report .report-wrapper {
+		direction: rtl;
+	}
+
+	.expense-register-report .dt-scrollable .dt-cell__content,
+	.expense-register-report .datatable .dt-cell__content {
+		font-size: 11px;
+		padding: 5px 8px;
+	}
+
+	.expense-register-report .report-summary,
+	.expense-register-report .summary-item {
+		font-size: 13px;
+		font-weight: 700;
+	}
+}

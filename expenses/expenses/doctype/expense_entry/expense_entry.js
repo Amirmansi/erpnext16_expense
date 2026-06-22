@@ -1,9 +1,7 @@
-// Copyright (c) 2022, efeone Pvt Ltd and contributors
-// For license information, please see license.txt
-
 frappe.ui.form.on("Expense Entry", {
 	setup(frm) {
-		// Bank / Cash accounts of the company only.
+		frm.page.wrapper.addClass("expenses-entry-form");
+
 		frm.set_query("payment_account", () => ({
 			filters: {
 				account_type: ["in", ["Bank", "Cash"]],
@@ -12,7 +10,6 @@ frappe.ui.form.on("Expense Entry", {
 			},
 		}));
 
-		// Expense rows: ledger (non-group) accounts of the company. Income/Equity excluded.
 		frm.set_query("expense_account", "expenses", () => {
 			if (!frm.doc.company) {
 				frappe.throw(__("Please select a Company first."));
@@ -40,6 +37,29 @@ frappe.ui.form.on("Expense Entry", {
 	},
 
 	refresh(frm) {
+		const keep = [
+			"naming_series",
+			"company",
+			"posting_date",
+			"mode_of_payment",
+			"payment_account",
+			"cost_center",
+			"expenses",
+			"total_amount",
+			"reference_no",
+			"reference_date",
+			"remarks",
+		];
+		frm.fields.forEach((field) => {
+			if (
+				keep.includes(field.df.fieldname) ||
+				["Section Break", "Column Break", "Tab Break"].includes(field.df.fieldtype)
+			) {
+				return;
+			}
+			frm.toggle_display(field.df.fieldname, false);
+		});
+
 		if (frm.doc.docstatus > 0) {
 			frm.add_custom_button(
 				__("Ledger"),

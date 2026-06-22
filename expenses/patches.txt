@@ -1,2 +1,5 @@
+[pre_model_sync]
+# patches before doctype sync
+
 [post_model_sync]
 expenses.patches.v1_0.remove_legacy_doctypes
